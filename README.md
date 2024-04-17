@@ -3,7 +3,7 @@
 ## Overview
 <p align="justify"> `CollegeTable` is a React component designed to display a list of colleges in a table format. It features infinite scrolling, dynamic sorting, and search capabilities. The component is ideal for managing and displaying large datasets, allowing users to interact with the data efficiently. </p>
 
-### Click the Go Live button and see the live👉 [Go Live]()
+### Click the Go Live button and see the live👉 [Go Live](https://collegeduniya-vishal.netlify.app)
 
 ## Installation
 - Install the required dependencies using npm install.
