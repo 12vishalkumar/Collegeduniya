@@ -1,0 +1,5 @@
+[
+    { "id": 1, "name": "College A", "rating": 4.5, "fees": 5000, "review": 4.0, "featured": true },
+    { "id": 2, "name": "College B", "rating": 4.0, "fees": 5500, "review": 4.5, "featured": false },
+    { "id": 3, "name": "College C", "rating": 3.5, "fees": 5300, "review": 4.2, "featured": false }
+]

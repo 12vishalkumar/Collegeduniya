@@ -1,0 +1,63 @@
+/* General table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #666;
+    color: white;
+}
+
+/* Search and sorting button styling */
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 22px);
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Highlight featured rows */
+td {
+    background-color: #FFFFFF;
+}
+
+tr.featured td {
+    background-color: #FFFFE0;
+}
+
+/* Loading and end message styles */
+.loader,
+.end-message {
+    text-align: center;
+    padding: 10px;
+    color: #666;
+}
