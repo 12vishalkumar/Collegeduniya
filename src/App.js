@@ -1,8 +1,8 @@
+//*************************** Importing required Libararies *********************
 import React from "react";
-import "./App.css";
 import CollegeTable from "./Components/CollegeTable/CollegeTable";
 
-
+//**************************** App function *************************************
 function App() {
   return (
     <>
@@ -13,4 +13,5 @@ function App() {
   );
 }
 
+//**************************** Exporting default App function ************************
 export default App;

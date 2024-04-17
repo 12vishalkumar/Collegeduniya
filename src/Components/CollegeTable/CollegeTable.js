@@ -1,13 +1,16 @@
+//************************************* Importing required Libararies ****************************
 import React, { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import "./CollegeTable.css";
+import Style from './CollegeTable.module.css';
 import "../data.json";
 
-// Simulating a fetch function for your JSON data
+
+//************************************* Simulating a fetch function for your JSON data ***********
 const fetchData = () => {
-    return require('../data.json');  // Adjust the path as necessary
+    return require('../data.json');
 };
 
+//************************************** CollegeTable function ************************************
 function CollegeTable() {
     const [data, setData] = useState([]);
     const [items, setItems] = useState([]);
@@ -26,7 +29,7 @@ function CollegeTable() {
         }
         setTimeout(() => {
             setItems(items.concat(data.slice(items.length, items.length + 10)));
-        }, 500);
+        }, 5000);
     };
 
     const handleSearch = (e) => {
@@ -45,6 +48,7 @@ function CollegeTable() {
         setItems(sortedData.slice(0, 10));
     };
 
+    //************************** Return the table of listed collage ***********
     return (
         <div>
             <input type="text" placeholder="Search by college name" value={search} onChange={handleSearch} />
@@ -53,6 +57,8 @@ function CollegeTable() {
                 <button onClick={() => sortBy('fees')}>Sort by Fees</button>
                 <button onClick={() => sortBy('review')}>Sort by Review</button>
             </div>
+
+            {/****************** InfiniteScrolling *************************/}
             <InfiniteScroll
                 dataLength={items.length}
                 next={fetchMoreData}
@@ -67,6 +73,7 @@ function CollegeTable() {
                 <table>
                     <thead>
                         <tr>
+                            <th>Sr. No.</th>
                             <th>College Name</th>
                             <th>Rating</th>
                             <th>Fees</th>
@@ -76,7 +83,8 @@ function CollegeTable() {
                     </thead>
                     <tbody>
                         {items.map((item, index) => (
-                            <tr key={index}>
+                            <tr key={index} className={index % 2 === 0 ? Style.evenRow : Style.oddRow}>
+                                <td>{index+1}</td>
                                 <td>{item.name}</td>
                                 <td>{item.rating}</td>
                                 <td>{item.fees}</td>
@@ -91,4 +99,5 @@ function CollegeTable() {
     );
 }
 
+//**************************************** Default exporting *************************
 export default CollegeTable;

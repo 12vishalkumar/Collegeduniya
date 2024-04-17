@@ -29,6 +29,7 @@ input[type="text"] {
     margin: 10px 0;
     width: calc(100% - 22px);
     box-sizing: border-box;
+    border-radius: 50px;
 }
 
 button {
@@ -45,11 +46,6 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Highlight featured rows */
-td {
-    background-color: #FFFFFF;
-}
-
 tr.featured td {
     background-color: #FFFFE0;
 }
@@ -60,4 +56,12 @@ tr.featured td {
     text-align: center;
     padding: 10px;
     color: #666;
+}
+
+.evenRow {
+    background-color: #bccde2;
+}
+
+.oddRow {
+    background-color: #ebc6e1;
 }

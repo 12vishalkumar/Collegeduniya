@@ -1,3 +1,89 @@
+# Collegeduniya
+
+## Overview
+<p align="justify"> `CollegeTable` is a React component designed to display a list of colleges in a table format. It features infinite scrolling, dynamic sorting, and search capabilities. The component is ideal for managing and displaying large datasets, allowing users to interact with the data efficiently. </p>
+
+### Click the Go Live button and see the live👉 [Go Live]()
+
+## Installation
+- Install the required dependencies using npm install.
+- Start the server using npm start.
+
+## Folder Structure
+- #### public
+- #### src
+    - ###### Components
+        - ###### CollegeTable
+            - ###### CollegeTable.css
+            - ###### ColegeTable.js
+        - ##### data.json
+    - ###### App.css
+    - ###### App.js
+    - ###### index.css
+    - ###### index.js
+- #### package.json
+- #### README.md
+
+## Features
+
+- **Infinite Scrolling**: Loads more data as the user scrolls down, enhancing performance and user experience.
+- **Sorting**: Allows users to sort the data by college rating, fees, and user review ratings both in ascending and descending order.
+- **Search**: Includes a search function to filter colleges by name.
+- **Featured Flag**: Highlights colleges that are marked as "featured" for easy identification.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js and npm
+- React.js (this component is built with React)
+
+## Installation
+
+To use the `CollegeTable` component in your project, follow these steps:
+
+1. **Clone the Repository** (if applicable):
+   ```bash
+   git clone https://github.com/yourusername/your-repository.git
+   cd your-repository
+   ```
+
+## Usage
+<p align="justify">Upon integration, the CollegeTable component requires no additional props to function. It encapsulates all its logic internally, handling state management, data fetching, and UI rendering autonomously.</p>
+
+- **Searching:** Simply type the name of a college in the search bar to filter the table.
+- **Sorting:** Click on any sortable column header to toggle between ascending and descending sorting for that column.
+
+## Customization
+<p>You can customize the component to better fit your specific requirements or to integrate more closely with your application's styling and functionality:</p>
+
+- **CSS Modifications:** Adjust the styles in `CollegeTable.css` to change the visual appearance of the table.
+- **Functionality Extensions:** Modify `CollegeTable.js` to introduce new features like additional filtering options, links to detailed college pages, or integration with a backend API for live data fetching.
+
+## Contributing
+<p align="justify">Contributions to improve or enhance the `CollegeTable` component are highly welcomed. Please feel free to fork the repository, make your changes, and submit a pull request.</p>
+
+### Output Screen
+- Initially Before reached College name.
+#### Initial Ten College Name
+  ![Initial](./src/Pictures/Initial.png)
+
+- After Searching college name
+#### Searched College Name
+   ![Searched](./src/Pictures/Searched.png)
+
+- Sorting the College name By Rating
+#### Sort By Rating
+   ![Rating](./src/Pictures/Rating.png)
+
+- Sorting the College name By Fees
+#### Sort By Fees
+   ![Fees](./src/Pictures/Frres.png)
+
+- Sorting the College name By Review
+#### Sort By Review
+   ![Review](./src/Pictures/Review.png)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
